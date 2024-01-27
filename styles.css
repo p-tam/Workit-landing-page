@@ -44,12 +44,12 @@
 
 #right-hero-icon {
     top: 209px;
-    right: 166px;
+    right: 80px;
     z-index: 111;
 }
 
 .icon-background {
-    width: 1200px;
+    width: 1700px;
     height: 100%;
     position: relative;
 }
@@ -264,7 +264,7 @@ html {
     display: flex;
     flex-direction: column;
     justify-content: space-evenly;
-    align-items: center;
+    align-items: flex-start;
     position: relative;
 }
 
@@ -280,7 +280,7 @@ html {
     font-size: 1rem;
     font-weight: var(--fw-regular);
     max-width: 90%;
-    text-align: center;
+    text-align: start;
     line-height: 1.75rem;
     margin-block: 20px;
 }
@@ -310,6 +310,30 @@ footer {
 button:active {
     background: none;
     color: var(--color-teal);
+}
+
+.button-border:active {
+    border: 2px solid var(--color-teal);
+}
+
+.author-div-decorative-icon {
+    position: absolute;
+    bottom: -81px;
+    right: 2px;
+}
+
+@media (max-width: 788px) {
+    .author-div-decorative-icon {
+        display: none;
+    }
+
+    .founder-description-wrapper {
+        align-items: center;
+    }
+
+    .founder-description-wrapper p {
+        text-align: center;
+    }
 }
 
 @media (min-width: 789px) {
